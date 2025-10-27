@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Basic global styles */
+/* Responsive global styles */
 :root {
   --bg: #0D0D0D;
   --surface: #1A1A1A;
@@ -13,24 +13,44 @@
   --glow: #A86FF7;
 }
 
-html,body,#root {
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: radial-gradient(circle at top right, rgba(122,63,242,0.06), transparent 20%),
-              linear-gradient(180deg, #0D0D0D 0%, #070707 100%);
+  background: radial-gradient(circle at top right, rgba(122,63,242,0.03), transparent 20%),
+              linear-gradient(180deg, #050505 0%, #000000 100%);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-/* smooth scroll for anchor nav */
+/* Responsive typography */
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
-/* subtle card style */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Card styles */
 .card {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
   border: 1px solid rgba(255,255,255,0.03);
@@ -38,32 +58,53 @@ html {
   padding: 1rem;
 }
 
-/* button styles */
+/* Button styles */
 .btn-primary {
   background: linear-gradient(90deg, var(--accent), var(--glow));
   color: #0b0710;
-  padding: 0.65rem 1rem;
+  padding: 0.65rem 1.5rem;
   border-radius: 10px;
   font-weight: 600;
   box-shadow: 0 6px 22px rgba(122,63,242,0.16);
   transition: transform .18s ease, box-shadow .18s ease;
+  display: inline-block;
+  text-align: center;
 }
+
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 40px rgba(122,63,242,0.22);
 }
 
-/* subtle glow for links */
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Link styles */
 a.accent {
   color: var(--accent);
   text-decoration: none;
 }
+
 a.accent:hover {
   color: var(--glow);
   text-decoration: underline;
 }
 
-/* responsive canvas hiding on very small screens for perf */
+/* Hide 3D on very small screens for performance */
 @media (max-width: 640px) {
-  .three-hidden-mobile { display:none; }
+  .three-hidden-mobile { 
+    display: none !important;
+  }
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
 }

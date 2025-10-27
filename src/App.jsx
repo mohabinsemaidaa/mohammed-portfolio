@@ -11,15 +11,36 @@ export default function App() {
     <div className="min-h-screen text-text overflow-x-hidden">
       <Navbar />
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        {/* Hero section */}
         <Hero />
-        <About />
-        <Skills />
-        <CaseStudies />
-        <Projects />
-        <Contact />
+        
+        {/* About section */}
+        <div className="py-12 sm:py-16 lg:py-20">
+          <About />
+        </div>
+        
+        {/* Skills section */}
+        <div className="py-12 sm:py-16 lg:py-20">
+          <Skills />
+        </div>
+        
+        {/* Case Studies section */}
+        <div>
+          <CaseStudies />
+        </div>
+        
+        {/* Projects section */}
+        <div>
+          <Projects />
+        </div>
+        
+        {/* Contact section */}
+        <div className="py-12 sm:py-16 lg:py-20">
+          <Contact />
+        </div>
       </main>
 
-      <footer className="mt-8 sm:mt-12 lg:mt-16 py-6 sm:py-8 text-center text-muted text-sm sm:text-base">
+      <footer className="mt-16 py-8 text-center text-muted text-sm sm:text-base">
         © {new Date().getFullYear()} Mohammed Bin Semaidaa
       </footer>
     </div>
@@ -29,7 +50,7 @@ export default function App() {
 // Enhanced About Component
 function About() {
   return (
-    <section id="about" className="py-8 sm:py-12 lg:py-14 w-full">
+    <section id="about" className="w-full">
       <div className="grid md:grid-cols-2 gap-6 lg:gap-8 items-center w-full">
         <div className="order-2 md:order-1 w-full">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">About Me</h2>

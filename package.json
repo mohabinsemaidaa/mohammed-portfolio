@@ -1,6 +1,7 @@
 {
   "name": "mohammed-portfolio",
   "version": "1.0.0",
+  "type": "module",
   "homepage": "https://mohabinsemaidaa.github.io/mohammed-portfolio",
   "scripts": {
     "dev": "vite",

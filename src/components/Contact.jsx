@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="max-w-3xl mx-auto w-full">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Contact</h2>
       <p className="text-muted mb-6 break-words">
-        Want to collaborate or see my CV? Reach me at <a className="accent" href="mailto:mohammed.alnoumani@student.hamk.fi">mohammed.alnoumani@student.hamk.fi</a>
+        Want to collaborate or see my CV? Reach me at <a className="accent" href="mailto:mohammed.binsemaidaa@student.hamk.fi">mohammed.binsemaidaa@student.hamk.fi</a>
       </p>
 
       <div className="grid md:grid-cols-2 gap-6 w-full">
@@ -13,12 +13,12 @@ export default function Contact() {
           <h4 className="font-semibold mb-3">Quick Links</h4>
           <ul className="text-muted space-y-2">
             <li>
-              <a className="accent hover:text-glow transition-colors break-words" href="https://github.com/mohammedalsemaidaa" target="_blank" rel="noopener noreferrer">
+              <a className="accent hover:text-glow transition-colors break-words" href="https://github.com/mohammedbinsemaidaa" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </li>
             <li>
-              <a className="accent hover:text-glow transition-colors break-words" href="https://www.linkedin.com/in/mohammed-al-semaidaa-5b4b5a1b5/" target="_blank" rel="noopener noreferrer">
+              <a className="accent hover:text-glow transition-colors break-words" href="https://www.linkedin.com/in/mohammed-bin-semaidaa-a9a399321" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </li>

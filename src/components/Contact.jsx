@@ -13,7 +13,7 @@ export default function Contact() {
           <h4 className="font-semibold mb-3">Quick Links</h4>
           <ul className="text-muted space-y-2">
             <li>
-              <a className="accent hover:text-glow transition-colors break-words" href="https://github.com/mohammedbinsemaidaa" target="_blank" rel="noopener noreferrer">
+              <a className="accent hover:text-glow transition-colors break-words" href="https://github.com/mohabinsemaidaa" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </li>

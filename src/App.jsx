@@ -81,13 +81,14 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center md:justify-end order-1 md:order-2 w-full">
+        {/* <div className="flex justify-center md:justify-end order-1 md:order-2 w-full">
           <img 
             src="/avatar.jpg" 
             alt="Mohammed" 
             className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover ring-2 ring-accent shadow-lg" 
           />
         </div>
+        */}
       </div>
     </section>
   )
